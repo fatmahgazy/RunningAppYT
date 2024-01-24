@@ -12,6 +12,7 @@ interface RunDAO {
     @Delete
     fun deleteRun(run: Run)
 
+    //comment hello
     @Query("SELECT * FROM running_table ORDER BY timestamp DESC")
     fun getAllRunesStoredByData():LiveData<List<Run>>
 
